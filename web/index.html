@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiopaedia Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Radiopaedia Medical Image Viewer</h1>
+            <p class="subtitle">Educational Medical Imaging Cases</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar with case list -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Cases</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search cases...">
+                    </div>
+                </div>
+                <div id="caseList" class="case-list">
+                    <!-- Cases will be loaded here dynamically -->
+                </div>
+            </aside>
+
+            <!-- Main viewer area -->
+            <main class="viewer">
+                <div id="caseViewer" class="case-viewer">
+                    <div class="welcome-message">
+                        <h2>Welcome to Radiopaedia Viewer</h2>
+                        <p>Select a case from the sidebar to begin viewing</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Image viewer modal -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="image-container">
+                    <button class="nav-btn prev" id="prevImage">&#10094;</button>
+                    <img id="modalImage" src="" alt="Medical Image">
+                    <button class="nav-btn next" id="nextImage">&#10095;</button>
+                </div>
+                <div class="image-info">
+                    <p id="imageCaption"></p>
+                    <div class="image-controls">
+                        <button id="zoomIn">Zoom In</button>
+                        <button id="zoomOut">Zoom Out</button>
+                        <button id="resetZoom">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
