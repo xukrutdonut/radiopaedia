@@ -1,0 +1,6 @@
+{
+  "playlist_url": "https://radiopaedia.org/playlists/85715",
+  "output_file": "cases.json",
+  "delay_between_requests": 1.0,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+}
